@@ -22,3 +22,4 @@
 Changes to b1 commit 1
 Changes to b1 commit 2
 Changes to b2 commit 1
+Changes to b2 commit 2
