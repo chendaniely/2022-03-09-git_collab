@@ -18,3 +18,5 @@
     - `git fetch --prune`: update local history
     - `git branch -d <NAME>`: delete the branch <NAME>
         - Note: lower-case d (use -D for force delete)
+Changes to b1 commit 1
+Changes to b1 commit 2
