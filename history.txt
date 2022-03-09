@@ -1,0 +1,225 @@
+
+   39  ssh-keygen
+   40  cat /c/Users/Danie/.ssh/id_rsa.pub
+   41  cat /c/Users/Danie/.ssh/id_rsa
+   42  cat /c/Users/Danie/.ssh/id_rsa.pub
+   43  cat ~/.ssh/id_rsa.pub
+   44  history
+   45  cd
+   46  mkdir git
+   47  cd git
+   48  pwd
+   49  git clone git@github.com:chendaniely/2022-03-09-git_collab.git
+   50  ls
+   51  cd 2022-03-09-git_collab/
+   52  ls
+   53  ls -a
+   54  history
+   55  nano README.md
+   56  git status
+   57  git add README.md
+   58  git status
+   59  git commit -m "talked about clone and init"
+   60  git status
+   61  git remote -b
+   62  git remote -v
+   63  git log --oneline --graph --all
+   64  git push origin main
+   65  git log --oneline --graph --all
+   66  git status
+   67  git branch my_first_branch
+   68  git log --oneline --graph --all
+   69  git checkout my_first_branch
+   70  git switch my_first_branch
+   71  git log --oneline --graph --all
+   72  git status
+   73  nano README.md
+   74  git branch -a
+   75  git status
+   76  git diff README.md
+   77  git status
+   78  git add README.md
+   79  git status
+   80  git commit -m "talked about creating and switching branches"
+   81  git status
+   82  git log --oneline --graph --all
+   83  cat README.md
+   84  git switch main
+   85  git log --oneline --graph --all
+   86  cat README.md
+   87  git switch my_first_branch
+   88  cat README.md
+   89  history
+   90  git log --oneline --graph --all
+   91  git push origin my_first_branch
+   92  nano README.md
+   93  git status
+   94  git log --oneline --graph --all
+   95  git add README.md
+   96  git commit -m "prs will update on new changes"
+   97  git log --oneline --graph --all
+   98  git push origin my_first_branch
+   99  git log --oneline --graph --all
+  100  git log --oneline --graph --all
+  101  git fetch
+  102  git log --oneline --graph --all
+  103  git switch main
+  104  git log --oneline --graph --all
+  105  git pull origin main
+  106  git log --oneline --graph --all
+  107  cat README.md
+  108  histoy
+  109  history
+  110  git branch -a
+  111  git log --oneline --graph --all
+  112  git log --oneline --graph --all
+  113  git fetch --prune
+  114  git log --oneline --graph --all
+  115  git branch -d my_first_branch
+  116  git log --oneline --graph --all
+  117  git status
+  118  git pull origin main
+  119  git switch -c using_branches
+  120  # git checkout -b using_branches
+  121  git status
+  122  nano README.md
+  123  git status
+  124  git add README.md
+  125  git commit -m "notes around create and clearning up branches"
+  126  git push origin using_branches
+  127  git add README.md
+  128  nano README.md
+  129  git switch main
+  130  git pull origin main
+  131  cat README.md
+  132  git log --oneline --graph --all
+  133  git fetch --prune
+  134  git log --oneline --graph --all
+  135  git branch -d using_branches
+  136  git log --oneline --graph --all
+  137  git log
+  138  git config --global user.name "Daniel Chen"
+  139  git config --global user.email "chendaniely@gmail.com"
+  140  git config user.name "Daniel Chen 2"
+  141  git config user.email "example@example.com"
+  142  git config user.name "Daniel Chen"
+  143  git config user.email "chendaniely@gmail.com"
+  144  git switch main
+  145  git pull origin main
+  146  git log --oneline --graph --all
+  147  git checkout -b conflict_branch_1
+  148  echo "Changes to b1 commit 1" >> README.md
+  149  cat README.md
+  150  git status
+  151  git add README.md
+  152  git commit -m "b1 c1"
+  153  echo "Changes to b1 commit 2" >> README.md
+  154  git add README.md
+  155  git commit -m "b1 c2"
+  156  git log --oneline --graph --all
+  157  git switch main
+  158  git log --oneline --graph --all
+  159  git checkout -b conflict_branch_2
+  160  git log --oneline --graph --all
+  161  echo "Changes to b2 commit 1" >> README.md
+  162  git add README.md
+  163  git commit -m "b2 c1"
+  164  echo "Changes to b2 commit 2" >> README.md
+  165  git add README.md
+  166  git commit -m "b2 c2"
+  167  git log --oneline --graph --all
+  168  history
+  169  nano README.md
+  170  git status
+  171  git add README.md
+  172  git commit -m "code for setup to share with people"
+  173  git log --oneline --graph --all
+  174*
+  175  git push origin conflict_branch_1
+  176  git log --oneline --graph --all
+  177  git log --oneline --graph --all
+  178  git log --oneline --graph --all
+  179  git fetch
+  180  git log --oneline --graph --all
+  181  git checkout main
+  182  git pull origin main
+  183  git log --oneline --graph --all
+  184  cat README.md
+  185  git log --oneline --graph --all
+  186  git checkout conflict_branch_2
+  187  git log --oneline --graph --all
+  188  cat README.md
+  189  git log --oneline --graph --all
+  190  git rebase main
+  191  git status
+  192  nano README.md
+  193  git status
+  194  git add README.md
+  195  git status
+  196  git rebase --continue
+  197  git status
+  198  git log --oneline --graph --all
+  199  history
+  200  git log --oneline --graph --all
+  201  git push origin conflict_branch_2
+  202  git push --force-with-lease conflict_branch_2
+  203  git push --force-with-lease origin conflict_branch_2
+  204  nano README.md
+  205  git status
+  206  git add README.md
+  207  git commit -m "put in code for pushing branches"
+  208  git push origin conflict_branch_2
+  209  git switch main
+  210  git pull origin main
+  211  git fetch --prune
+  212  git branch -a
+  213  git branch -d conflict_branch_1
+  214  git branch -d conflict_branch_2
+  215  git log --oneline --graph --all
+  216  git pull origin main
+  217  nano README.md
+  218  git status
+  219  git add README.md
+  220  git commit -m "branch protection OOPS!"
+  221  git status
+  222  git push origin main
+  223  git log --oneline --graph --all
+  224  git branch protect
+  225  git log --oneline --graph --all
+  226  git reset --hard b830408
+  227  git log --oneline --graph --all
+  228  git push origin protect:protect
+  229  git pull origin main
+  230  cat README.md
+  231  git fetch --prune
+  232  git branch -d protect
+  233  git log --oneline --graph --all
+  234  history
+  235  git pull origin main
+  236  git log --oneline --graph --all
+  237  git switch -c dev
+  238  git log --oneline --graph --all
+  239  git switch -c feature1
+  240  git log --oneline --graph --all
+  241  git push origin dev:dev
+  242  git push origin feature1:feature1
+  243  nano README.md
+  244  git status
+  245  git add README.md
+  246  git commit -m "talk about git flow"
+  247  git push origin feature1
+  248  git fetch
+  249  git log --oneline --graph --all
+  250  git switch dev
+  251  git pull origin dev
+  252  git log --oneline --graph --all
+  253  git fetch --prune
+  254  git branch -d feature1
+  255  git log --oneline --graph --all
+  256  git switch main
+  257  git pull origin main
+  258  git fetch --prune
+  259  git branch -d dev
+  260  git log --oneline --graph --all
+  261  git switch -c history
+  262  history > history.txt
