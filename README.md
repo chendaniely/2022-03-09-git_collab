@@ -7,3 +7,5 @@
     - `git branch -a`: list all your branches
 - `git switch <NAME>`: switch to branch <NAME>
     - `git checkout <NAME>`: "older" way to switch branches
+- The PR (pull request) will update if you push new changes
+
