@@ -49,3 +49,7 @@ git commit -m "b2 c2"
 git push origin conflict_branch_2
 git push origin conflict_branch_1
 ```
+
+- Branch protection rules force you to practice collaboration on your own
+- `git reset --hard <HASH>`: force move current branch to <HASH> location
+- `git log --oneline --graph --all`
