@@ -53,3 +53,8 @@ git push origin conflict_branch_1
 - Branch protection rules force you to practice collaboration on your own
 - `git reset --hard <HASH>`: force move current branch to <HASH> location
 - `git log --oneline --graph --all`
+
+## Git flow
+
+- instead of `main` all our work/PRs go into `dev`/`devlop`/`devlopment`
+
